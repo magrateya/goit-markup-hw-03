@@ -248,6 +248,9 @@ p {
 .activity-list > li + li {
   margin-left: 30px;
 }
+.activity .container {
+  padding-bottom: 106px;
+}
 /* .activity .container {
   background-color: yellow;
 } */
@@ -300,6 +303,9 @@ p {
 } */
 .clients-list > li + li {
   margin-left: 30px;
+}
+.clients .container {
+  padding-top: 82px;
 }
 /* футер */
 footer {
