@@ -54,15 +54,17 @@ header > .container {
 .nav .link {
   color: var(--title-text-color);
 }
-.nav .link:hover,
+/* .nav .link:hover,
 .nav .link:focus {
   color: var(--accent-color);
-}
+} */
 .contacts .link {
   color: var(--primary-text-color);
 }
 .contacts .link:hover,
-.contacts .link:focus {
+.contacts .link:focus,
+.nav .link:hover,
+.nav .link:focus {
   color: var(--accent-color);
 }
 ul {
@@ -263,7 +265,7 @@ p {
   flex-direction: row;
 }
 .team-list > li {
-  width: cacl((100% - 3 * 30px) / 4);
+  width: calc((100% - 3 * 30px) / 4);
 }
 .team-list > li + li {
   margin-left: 30px;
@@ -286,7 +288,7 @@ p {
 }
 .team-pages {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
 }
 .team-pages > li + li {
   margin-left: 11px;
