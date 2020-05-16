@@ -168,6 +168,9 @@ img {
 .contacts > li:not(:last-child) {
   margin-right: 30px;
 }
+.contacts img {
+  display: inline;
+}
 
 /* герой */
 .hero .hero-title {
