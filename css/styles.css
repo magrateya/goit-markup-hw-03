@@ -434,9 +434,9 @@ b {
 /* примеры работ */
 .link img {
   margin-bottom: 20px;
+  max-width: 100%;
 }
 .example .example-title {
-  margin-bottom: 4px;
   margin-left: 24px;
   margin-right: 24px;
 
@@ -472,7 +472,11 @@ b {
   width: calc((100% - 2 * 30px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
 }
+
 .example-items:nth-child(3n) {
   margin-right: 0px;
 }
