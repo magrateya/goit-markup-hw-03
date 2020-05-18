@@ -42,9 +42,6 @@ body {
   padding-bottom: 94px;
   padding-top: 94px;
 }
-.advantages {
-  padding-bottom: 0px;
-}
 .container {
   width: 1230px;
   padding-left: 15px;
@@ -259,6 +256,7 @@ img {
 }
 .activity-list > li {
   width: calc((100% - 2 * 30px) / 3);
+  border-radius: 0px 0px 4px 4px;
 }
 .activity-list > li:not(:last-child) {
   margin-right: 30px;
@@ -267,6 +265,8 @@ img {
   display: block;
   padding-top: 27px;
   padding-bottom: 27px;
+
+  border-radius: 0px 0px 4px 4px;
 
   background-color: var(--bg-title-activity-color);
 }
@@ -285,12 +285,18 @@ img {
 }
 .team-list > li {
   width: calc((100% - 3 * 30px) / 4);
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  background-color: var(--primary-white-color);
 }
 .team-list > li:not(:last-child) {
   margin-right: 30px;
 }
 .team-list img {
   margin-bottom: 30px;
+
+  /* max-width: 100%; */
 }
 .team-members {
   color: var(--title-text-color);
@@ -348,9 +354,7 @@ footer {
 .footer-contacts > ul > li {
   margin-bottom: 9px;
 }
-.footer-contacts > ul > li:last-child {
-  margin-bottom: 28px;
-}
+
 .footer-contacts .link {
   color: var(--footer-text-contacts-color);
 
@@ -381,12 +385,14 @@ b {
   text-transform: uppercase;
 }
 .copyright {
+  padding-top: 18px;
   color: var(--footer-text-copyright);
 
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
   text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 /* страница портфолио */
 /* .portfolio {
