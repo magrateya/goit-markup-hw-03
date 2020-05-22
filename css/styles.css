@@ -91,9 +91,20 @@ p {
 }
 img {
   display: block;
+  /* max-width: 100%; */
 }
 .link {
   text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 /* лого шапка */
 .link .links {
@@ -155,9 +166,9 @@ header {
 .nav-item:not(:last-child) {
   margin-right: 45px;
 }
+
 .contacts {
   display: flex;
-  flex-direction: row;
   margin-left: auto;
 
   font-weight: 500;
@@ -170,6 +181,10 @@ header {
 }
 .contacts img {
   display: inline;
+}
+.contacts .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /* герой */
@@ -368,7 +383,7 @@ footer {
 .join-networks > li + li {
   margin-left: 10px;
 }
-b {
+.join-header {
   display: block;
   margin-bottom: 21px;
 
@@ -435,6 +450,7 @@ b {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+
 .example .example-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -473,4 +489,8 @@ b {
 }
 .example-items:nth-last-child(-n + 3) {
   margin-bottom: 0px;
+}
+.example .example-items:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
